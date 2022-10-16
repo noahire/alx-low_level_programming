@@ -17,10 +17,13 @@ int main(void)
 				(b < 10) {
 				putchar(a + '0');
 				putchar(b + '0');
-				putchar(',');
-				putchar(' ');
-				b++;
+				if (a < 8)
+					{
+					putchar(',');
+					putchar(' ');
 				}
+				b++;
+			}
 			a++;
 			b = a + 1;
 		}
